@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="IdiNahui.UserView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IdiNahui"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="NumDay" FontSize="40" Text="1" Foreground="#7C9473" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Image x:Name="img"  Source="/hachis drawing of nana lmao.jpg" Grid.Row="1" />
+    </Grid>
+</UserControl>

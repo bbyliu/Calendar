@@ -1,0 +1,80 @@
+﻿<Page x:Class="IdiNahui.FirstPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:IdiNahui"
+      xmlns:hc="https://handyorg.github.io/handycontrol"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="FirstPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="6" Background="#7C9473" />
+        <Button Background="#E8EAE6" Grid.Column="0" Grid.Row="0" Height="40" Width="80" hc:BorderElement.Circular="True" Content="←" FontSize="20" Click="Button_Click_2"/>
+        <Button Background="#E8EAE6" Grid.Column="5" Grid.Row="0" Height="40" Width="80" hc:BorderElement.Circular="True" Content="→" FontSize="20" Click="Button_Click_1"/>
+        <Button Background="#E8EAE6" Grid.Column="4" hc:BorderElement.Circular="True" Height="30" Width="40" Content="&#128197;" Click="Button_Click"/>
+
+
+
+
+
+        <TextBlock  FontSize="30" FontWeight="DemiBold" Grid.Column="1" Grid.ColumnSpan="3" x:Name="MonthNameDisplay" Text="{Binding CurrentMonthName}" 
+                  Foreground="Black" Padding="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+
+        <WrapPanel Grid.Column="0" Grid.Row="1" Grid.RowSpan="4" Grid.ColumnSpan="6" Name="Tap">
+            <Button Width="80" Height="80" x:Name="OO" Click="OO_Click"/>
+            <Button Width="80" Height="80" x:Name="O2" Click="O2_Click" />
+            <Button Width="80" Height="80" x:Name="O3" Click="O3_Click"/>
+            <Button Width="80" Height="80" x:Name="O4" Click="O4_Click"/>
+            <Button Width="80" Height="80" x:Name="O5" Click="O5_Click" />
+            <Button Width="80" Height="80" x:Name="O6" Click="O6_Click"/>
+            <Button Width="80" Height="80" x:Name="O7" Click="O7_Click"/>
+            <Button Width="80" Height="80" x:Name="O8" Click="O8_Click"/>
+            <Button Width="80" Height="80" x:Name="O9" Click="O9_Click"/>
+            <Button Width="80" Height="80" x:Name="O10" Click="O10_Click" />
+            <Button Width="80" Height="80" x:Name="O11"  Click="O11_Click"/>
+            <Button Width="80" Height="80" x:Name="O12"  Click="O12_Click" />
+            <Button Width="80" Height="80" x:Name="O13"  Click="O13_Click"/>
+            <Button Width="80" Height="80" x:Name="O14"  Click="O14_Click"/>
+            <Button Width="80" Height="80" x:Name="O15"  Click="O15_Click"/>
+            <Button Width="80" Height="80" x:Name="O16"  Click="O16_Click" />
+            <Button Width="80" Height="80" x:Name="O17"  Click="O17_Click"/>
+            <Button Width="80" Height="80" x:Name="O18"  Click="O18_Click"/>
+            <Button Width="80" Height="80" x:Name="O19"  Click="O19_Click"/>
+            <Button Width="80" Height="80" x:Name="O20"  Click="O20_Click"/>
+            <Button Width="80" Height="80" x:Name="O21" Click="O21_Click"/>
+            <Button Width="80" Height="80" x:Name="O22" Click="O22_Click"/>
+            <Button Width="80" Height="80" x:Name="O23" Click="O23_Click"/>
+            <Button Width="80" Height="80" x:Name="O24" Click="O24_Click"/>
+            <Button Width="80" Height="80" x:Name="O25" Click="O25_Click"/>
+            <Button Width="80" Height="80" x:Name="O26" Click="O26_Click"/>
+            <Button Width="80" Height="80" x:Name="O27" Click="O27_Click"/>
+            <Button Width="80" Height="80" x:Name="O28" Click="O28_Click"/>
+            <Button Width="80" Height="80" x:Name="O29" Click="O29_Click" />
+            <Button Width="80" Height="80" x:Name="O30" Click="O30_Click"/>
+            <Button Width="80" Height="80" x:Name="O31" Click="O31_Click"/>
+
+        </WrapPanel>
+        <Frame x:Name="PageFrame" Grid.ColumnSpan="6" Grid.Row="0" Grid.RowSpan="5" NavigationUIVisibility="Hidden" />
+
+        <Calendar hc:TitleElement.Background="#7C9473" x:Name="calen" Visibility="Hidden" IsTodayHighlighted="True" 
+                  Grid.Row="1"   Grid.Column="3" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+    </Grid>
+</Page>

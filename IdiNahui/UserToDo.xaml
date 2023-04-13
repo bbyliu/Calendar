@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="IdiNahui.UserToDo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IdiNahui"
+             mc:Ignorable="d" xmlns:hc="https://handyorg.github.io/handycontrol"
+             d:DesignHeight="200" d:DesignWidth="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="130"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+        </Grid.RowDefinitions>
+        
+        <CheckBox x:Name="Chh" Height="60" Width="60" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Image x:Name="ImfDo" Source="hachi.jpg" Grid.Column="1" />
+        <TextBlock x:Name="NameDo" Grid.Column="2" Text="Ничегооо" FontSize="40" Foreground="#7C9473" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+</UserControl>
